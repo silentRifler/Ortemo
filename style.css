@@ -1,0 +1,88 @@
+body {
+    margin:0;
+    font-family:sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+}
+
+.face {
+    margin: 200px 44%;
+}
+
+.eye {
+    border-radius: 50%;
+    background-color: #000000;
+    display: inline;
+    position: absolute;
+    top: 59px;
+    animation: blink 1.4s infinite;
+    transition: top 0.56s ease-out, left 0.5s ease-in;
+}
+
+.eye-left {
+    padding: 30px;
+}
+
+.eye-right {
+    padding: 30px;
+    margin: 0px 100px 30px;
+}
+
+.mouth {
+    width: 60px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 188px;
+    left: 600px;
+}
+
+@keyframes blink {
+    14% {
+        transform: scaleY((1));
+    }
+    25% {transform: scaleY(0.06);}
+}
+
+.msg-logs {
+    padding: 20px;
+    text-align: center;
+    font-size: 3rem;
+    display: inline;
+}
+
+.form {
+    justify-content: center;
+    padding: 20px;
+}
+
+.inp {
+    border-radius: 10px;
+    color: #000000;
+    font-size: 17px;
+}
+
+.send {
+    padding: 20px;
+    background-color: #5a5ada;
+    color: white;
+    border-radius: 13px;
+    border: none;
+    margin-left: 7px;
+    transition: all 0.3s ease-out, all 0.3s ease-in;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.send:hover {
+    padding: 20px;
+    transform: scale(1.1);
+    background-color: #4040ab;
+}
